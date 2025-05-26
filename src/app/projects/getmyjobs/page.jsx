@@ -14,7 +14,6 @@ import Navbar from "@/app/Component/Navbar.jsx";
 import Footer from "@/app/Component/Footer";
 
 export default function Getmyjobs() {
-  // Scroll to top on component load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,7 +25,7 @@ export default function Getmyjobs() {
 
         <div className={styles.projectTitle} id="heroSection">
           <div className={styles.projectName}>
-            <h1>Getmyjobs.in</h1>
+            <h1>GetMyJobs.in</h1>
             <Link href="/projects" className={styles.backButton}>
               ← Back to projects
             </Link>
@@ -38,20 +37,18 @@ export default function Getmyjobs() {
             <div className={styles.homeVl}></div>
             <p>Requirement Gathering</p>
           </div>
-
           <ul className={styles.projectText}>
             <li>
-              Partnered with stakeholders to identify the needs of two key user
-              groups: job seekers and recruiters.
+              Collaborated with internal stakeholders to define platform goals,
+              targeting both job seekers and recruiters.
             </li>
             <li>
-              Defined separate workflows for each user group to ensure a
-              tailored experience, such as quick job search for seekers and
-              streamlined posting tools for recruiters.
+              Conducted competitive research and user interviews to uncover
+              friction points in job discovery and applicant screening.
             </li>
             <li>
-              Conducted user interviews and market research to understand
-              industry trends and user pain points.
+              Mapped workflows for account setup, job search, and recruiter
+              dashboards tailored to distinct user personas.
             </li>
           </ul>
         </div>
@@ -61,19 +58,18 @@ export default function Getmyjobs() {
             <div className={styles.homeVl}></div>
             <p>Design</p>
           </div>
-
           <ul className={styles.projectText}>
             <li>
-              Created comprehensive Figma designs focusing on accessibility and
-              simplicity, particularly for non-technical users.
+              Designed a clean, accessible, and mobile-friendly interface in
+              Figma, optimized for first-time users.
             </li>
             <li>
-              Developed interfaces for key features like search filters,
-              application tracking, and profile management.
+              Focused on intuitive layouts for quick job search, resume uploads,
+              recruiter filters, and easy job posting.
             </li>
             <li>
-              Designed a responsive layout optimized for both web and mobile
-              users to maximize usability.
+              Created both login and homepage flows for desktop and mobile
+              views.
             </li>
           </ul>
         </div>
@@ -86,8 +82,6 @@ export default function Getmyjobs() {
               width={500}
               height={350}
             />
-          </div>
-          <div className={styles.projectRowCol}>
             <Image
               src={getmyjobsHome}
               alt="Home Page"
@@ -102,19 +96,18 @@ export default function Getmyjobs() {
             <div className={styles.homeVl}></div>
             <p>Development</p>
           </div>
-
           <ul className={styles.projectText}>
             <li>
-              Implemented the front-end using HTML, CSS, and JavaScript to
-              deliver fast-loading, responsive, and visually engaging pages.
+              Developed the frontend using HTML, CSS, and JavaScript, ensuring a
+              responsive and performance-optimized experience.
             </li>
             <li>
-              Incorporated features like real-time updates for job applications
-              and intuitive recruiter dashboards.
+              Integrated dynamic features like real-time application status and
+              recruiter dashboard analytics.
             </li>
             <li>
-              Ensured browser compatibility and conducted extensive testing for
-              a seamless experience across different platforms.
+              Ensured full mobile and cross-browser compatibility through
+              iterative testing.
             </li>
           </ul>
         </div>
@@ -124,12 +117,12 @@ export default function Getmyjobs() {
             <div className={styles.homeVl}></div>
             <p>Outcome</p>
           </div>
-
           <ul className={styles.projectText}>
             <li>
-              Delivered an innovative job portal that offered ease of use for
-              job seekers and recruiters, successfully connecting talent with
-              opportunity. (Full designs are not shareable due to NDA)
+              Delivered a functional job platform that bridges the gap between
+              job seekers and recruiters, enhancing the application process
+              through streamlined UX. (Note: Full design not publicly shared due
+              to NDA)
             </li>
           </ul>
         </div>

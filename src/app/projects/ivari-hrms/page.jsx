@@ -5,20 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-// designs
-import iVariHRMSHome from "@/public/designs/iVariHRMS/Home.png";
-import iVariHRMSSalary from "@/public/designs/iVariHRMS/Salaryslips.png";
-import iVariHRMSLeave from "@/public/designs/iVariHRMS/Leave.png";
-import iVariHRMSPunchIn from "@/public/designs/iVariHRMS/PunchIn.png";
-import iVariHRMSOutReach from "@/public/designs/iVariHRMS/OutReach.png";
-import iVariHRMSSales from "@/public/designs/iVariHRMS/SalesUpload.png";
-import iVariHRMSAttendance from "@/public/designs/iVariHRMS/HRMSAttendance.png";
-import iVariHRMSDashboard from "@/public/designs/iVariHRMS/HRMSDashboard.png";
-import iVariHRMSDashboardSalary from "@/public/designs/iVariHRMS/HRMSDashboardSalary.png";
-import iVariHRMSDashboardLeave from "@/public/designs/iVariHRMS/HRMSDashboardLeave.png";
-import iVariHRMSDashboardSales from "@/public/designs/iVariHRMS/HRMSDashboardSales.png";
-import iVariHRMSDashboardOutReach from "@/public/designs/iVariHRMS/HRMSDashboardOutReach.png";
-
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
 import Footer from "@/app/Component/Footer";
@@ -114,37 +100,37 @@ export default function IvariHRMS() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariHRMSHome}
+              src="/designs/iVariHRMS/Home.png"
               alt="Home Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSPunchIn}
+              src="/designs/iVariHRMS/PunchIn.png"
               alt="Punch In Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSLeave}
+              src="/designs/iVariHRMS/Leave.png"
               alt="Leave Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSSales}
+              src="/designs/iVariHRMS/SalesUpload.png"
               alt="Sales Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSSalary}
+              src="/designs/iVariHRMS/Salaryslips.png"
               alt="Salary Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSOutReach}
+              src="/designs/iVariHRMS/OutReach.png"
               alt="Outreach Page"
               width={500}
               height={300}
@@ -152,37 +138,37 @@ export default function IvariHRMS() {
           </div>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariHRMSDashboard}
+              src="/designs/iVariHRMS/HRMSDashboard.png"
               alt="Dashboard"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSAttendance}
+              src="/designs/iVariHRMS/HRMSAttendance.png"
               alt="Attendance"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSDashboardLeave}
+              src="/designs/iVariHRMS/HRMSDashboardLeave.png"
               alt="Dashboard Leave"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSDashboardSales}
+              src="/designs/iVariHRMS/HRMSDashboardSales.png"
               alt="Dashboard Sales"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSDashboardSalary}
+              src="/designs/iVariHRMS/HRMSDashboardSalary.png"
               alt="Dashboard Salary"
               width={500}
               height={300}
             />
             <Image
-              src={iVariHRMSDashboardOutReach}
+              src="/designs/iVariHRMS/HRMSDashboardOutReach.png"
               alt="Dashboard Outreach"
               width={500}
               height={300}

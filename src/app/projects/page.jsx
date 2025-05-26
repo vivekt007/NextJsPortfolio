@@ -9,18 +9,18 @@ import Footer from "../Component/Footer.jsx";
 import styles from "./Project.module.css";
 
 // Imported Icons
-import ForwardIcon from "@/public/Icons/ForwardIcon.svg";
-import LockIcon from "@/public/Icons/LockIcon.svg";
+import ForwardIcon from "/public/Icons/ForwardIcon.svg";
+import LockIcon from "/public/Icons/LockIcon.svg";
 
 // Imported Images
-import IvariRevamp from "@/public/ProjectThumbnails/IvariRevamp.png";
-import IvariHRMS from "@/public/ProjectThumbnails/IvariHrms.png";
-import StonePaper from "@/public/ProjectThumbnails/StonePaper.png";
-import GetmyJobs from "@/public/ProjectThumbnails/Getmyjobs.png";
-import CampusBuy from "@/public/ProjectThumbnails/CampusBuy.png";
-import CubeAssignment from "@/public/ProjectThumbnails/CubeAssignment.png";
-import Careerpulse from "@/public/ProjectThumbnails/Careerpulsethumbnail.png";
-import BrassGlobe from "@/public/ProjectThumbnails/BrassGlobe.png";
+import IvariRevamp from "/public/ProjectThumbnails/IvariRevamp.png";
+import IvariHRMS from "/public/ProjectThumbnails/IvariHrms.png";
+import StonePaper from "/public/ProjectThumbnails/StonePaper.png";
+import GetmyJobs from "/public/ProjectThumbnails/Getmyjobs.png";
+import CampusBuy from "/public/ProjectThumbnails/CampusBuy.png";
+import CubeAssignment from "/public/ProjectThumbnails/CubeAssignment.png";
+import Careerpulse from "/public/ProjectThumbnails/Careerpulsethumbnail.png";
+import BrassGlobe from "/public/ProjectThumbnails/BrassGlobe.png";
 
 const Projects = () => {
   const router = useRouter();
