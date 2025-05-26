@@ -7,7 +7,8 @@ function GithubLastUpdate() {
     const [lastUpdate, setLastUpdate] = useState(null);
 
     useEffect(() => {
-        fetch("https://api.github.com/repos/vivekt007/vivektigadi")
+        fetch("https://api.github.com/repos/vivekt007/NextJsPortfolio")
+        // https://github.com/vivekt007/NextJsPortfolio
             .then((response) => response.json())
             .then((data) => {
                 if (data.pushed_at) {
