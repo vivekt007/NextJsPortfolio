@@ -6,18 +6,18 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import iVariHRMSHome from "/public/designs/iVariHRMS/Home.png";
-import iVariHRMSSalary from "/public/designs/iVariHRMS/Salaryslips.png";
-import iVariHRMSLeave from "/public/designs/iVariHRMS/Leave.png";
-import iVariHRMSPunchIn from "/public/designs/iVariHRMS/PunchIn.png";
-import iVariHRMSOutReach from "/public/designs/iVariHRMS/OutReach.png";
-import iVariHRMSSales from "/public/designs/iVariHRMS/SalesUpload.png";
-import iVariHRMSAttendance from "/public/designs/iVariHRMS/HRMSAttendance.png";
-import iVariHRMSDashboard from "/public/designs/iVariHRMS/HRMSDashboard.png";
-import iVariHRMSDashboardSalary from "/public/designs/iVariHRMS/HRMSDashboardSalary.png";
-import iVariHRMSDashboardLeave from "/public/designs/iVariHRMS/HRMSDashboardLeave.png";
-import iVariHRMSDashboardSales from "/public/designs/iVariHRMS/HRMSDashboardSales.png";
-import iVariHRMSDashboardOutReach from "/public/designs/iVariHRMS/HRMSDashboardOutReach.png";
+import iVariHRMSHome from "@/public/designs/iVariHRMS/Home.png";
+import iVariHRMSSalary from "@/public/designs/iVariHRMS/Salaryslips.png";
+import iVariHRMSLeave from "@/public/designs/iVariHRMS/Leave.png";
+import iVariHRMSPunchIn from "@/public/designs/iVariHRMS/PunchIn.png";
+import iVariHRMSOutReach from "@/public/designs/iVariHRMS/OutReach.png";
+import iVariHRMSSales from "@/public/designs/iVariHRMS/SalesUpload.png";
+import iVariHRMSAttendance from "@/public/designs/iVariHRMS/HRMSAttendance.png";
+import iVariHRMSDashboard from "@/public/designs/iVariHRMS/HRMSDashboard.png";
+import iVariHRMSDashboardSalary from "@/public/designs/iVariHRMS/HRMSDashboardSalary.png";
+import iVariHRMSDashboardLeave from "@/public/designs/iVariHRMS/HRMSDashboardLeave.png";
+import iVariHRMSDashboardSales from "@/public/designs/iVariHRMS/HRMSDashboardSales.png";
+import iVariHRMSDashboardOutReach from "@/public/designs/iVariHRMS/HRMSDashboardOutReach.png";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
@@ -32,7 +32,7 @@ export default function IvariHRMS() {
   return (
     <div className={styles.project}>
       <div className={styles.projectContainer}>
-      <Navbar />
+        <Navbar />
 
         <div className={styles.projectTitle} id="heroSection">
           <div className={styles.projectName}>

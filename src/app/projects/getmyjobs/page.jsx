@@ -6,8 +6,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import getmyjobsHome from "/public/designs/Getmyjobs/Homepage.png";
-import GetmyJobsLogin from "/public/designs/Getmyjobs/Loginpage.png";
+import getmyjobsHome from "@/public/designs/Getmyjobs/Homepage.png";
+import GetmyJobsLogin from "@/public/designs/Getmyjobs/Loginpage.png";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
@@ -41,17 +41,17 @@ export default function Getmyjobs() {
 
           <ul className={styles.projectText}>
             <li>
-              Partnered with stakeholders to identify the needs of two
-              key user groups: job seekers and recruiters.
+              Partnered with stakeholders to identify the needs of two key user
+              groups: job seekers and recruiters.
             </li>
             <li>
-              Defined separate workflows for each user group to ensure
-              a tailored experience, such as quick job search for
-              seekers and streamlined posting tools for recruiters.
+              Defined separate workflows for each user group to ensure a
+              tailored experience, such as quick job search for seekers and
+              streamlined posting tools for recruiters.
             </li>
             <li>
-              Conducted user interviews and market research to
-              understand industry trends and user pain points.
+              Conducted user interviews and market research to understand
+              industry trends and user pain points.
             </li>
           </ul>
         </div>
@@ -64,17 +64,16 @@ export default function Getmyjobs() {
 
           <ul className={styles.projectText}>
             <li>
-              Created comprehensive Figma designs focusing on
-              accessibility and simplicity, particularly for
-              non-technical users.
+              Created comprehensive Figma designs focusing on accessibility and
+              simplicity, particularly for non-technical users.
             </li>
             <li>
-              Developed interfaces for key features like search
-              filters, application tracking, and profile management.
+              Developed interfaces for key features like search filters,
+              application tracking, and profile management.
             </li>
             <li>
-              Designed a responsive layout optimized for both web and
-              mobile users to maximize usability.
+              Designed a responsive layout optimized for both web and mobile
+              users to maximize usability.
             </li>
           </ul>
         </div>
@@ -106,18 +105,16 @@ export default function Getmyjobs() {
 
           <ul className={styles.projectText}>
             <li>
-              Implemented the front-end using HTML, CSS, and
-              JavaScript to deliver fast-loading, responsive, and
-              visually engaging pages.
+              Implemented the front-end using HTML, CSS, and JavaScript to
+              deliver fast-loading, responsive, and visually engaging pages.
             </li>
             <li>
-              Incorporated features like real-time updates for job
-              applications and intuitive recruiter dashboards.
+              Incorporated features like real-time updates for job applications
+              and intuitive recruiter dashboards.
             </li>
             <li>
-              Ensured browser compatibility and conducted extensive
-              testing for a seamless experience across different
-              platforms.
+              Ensured browser compatibility and conducted extensive testing for
+              a seamless experience across different platforms.
             </li>
           </ul>
         </div>
@@ -130,10 +127,9 @@ export default function Getmyjobs() {
 
           <ul className={styles.projectText}>
             <li>
-              Delivered an innovative job portal that offered ease of
-              use for job seekers and recruiters, successfully
-              connecting talent with opportunity. (Full designs are
-              not shareable due to NDA)
+              Delivered an innovative job portal that offered ease of use for
+              job seekers and recruiters, successfully connecting talent with
+              opportunity. (Full designs are not shareable due to NDA)
             </li>
           </ul>
         </div>
@@ -142,4 +138,4 @@ export default function Getmyjobs() {
       </div>
     </div>
   );
-} 
+}

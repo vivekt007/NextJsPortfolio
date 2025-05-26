@@ -9,18 +9,18 @@ import Footer from "../Component/Footer.jsx";
 import styles from "./Project.module.css";
 
 // Imported Icons
-import ForwardIcon from "/public/Icons/ForwardIcon.svg?url";
-import LockIcon from "/public/Icons/LockIcon.svg?url";
+import ForwardIcon from "@/public/Icons/ForwardIcon.svg";
+import LockIcon from "@/public/Icons/LockIcon.svg";
 
 // Imported Images
-import IvariRevamp from "/public/ProjectThumbnails/IvariRevamp.png";
-import IvariHRMS from "/public/ProjectThumbnails/IvariHrms.png";
-import StonePaper from "/public/ProjectThumbnails/StonePaper.png";
-import GetmyJobs from "/public/ProjectThumbnails/Getmyjobs.png";
-import CampusBuy from "/public/ProjectThumbnails/CampusBuy.png";
-import CubeAssignment from "/public/ProjectThumbnails/CubeAssignment.png";
-import Careerpulse from "/public/ProjectThumbnails/Careerpulsethumbnail.png";
-import BrassGlobe from "/public/ProjectThumbnails/BrassGlobe.png";
+import IvariRevamp from "@/public/ProjectThumbnails/IvariRevamp.png";
+import IvariHRMS from "@/public/ProjectThumbnails/IvariHrms.png";
+import StonePaper from "@/public/ProjectThumbnails/StonePaper.png";
+import GetmyJobs from "@/public/ProjectThumbnails/Getmyjobs.png";
+import CampusBuy from "@/public/ProjectThumbnails/CampusBuy.png";
+import CubeAssignment from "@/public/ProjectThumbnails/CubeAssignment.png";
+import Careerpulse from "@/public/ProjectThumbnails/Careerpulsethumbnail.png";
+import BrassGlobe from "@/public/ProjectThumbnails/BrassGlobe.png";
 
 const Projects = () => {
   const router = useRouter();
@@ -41,7 +41,7 @@ const Projects = () => {
           <div className={styles["projects-holder"]}>
             <div
               className={styles["projects-block"]}
-              onClick={() => router.push('/projects/ivari-revamp')}
+              onClick={() => router.push("/projects/ivari-revamp")}
               role="button"
               tabIndex={0}
             >
@@ -65,14 +65,19 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
 
             <div
               className={styles["projects-block"]}
-              onClick={() => router.push('/projects/ivari-hrms')}
+              onClick={() => router.push("/projects/ivari-hrms")}
               role="button"
               tabIndex={0}
             >
@@ -91,12 +96,18 @@ const Projects = () => {
                     Ivari HRMS <span>[Project]</span>
                   </h3>
                   <p>
-                    A comprehensive HR Management System that streamlines employee management, 
-                    attendance tracking, leave management, and salary processing.
+                    A comprehensive HR Management System that streamlines
+                    employee management, attendance tracking, leave management,
+                    and salary processing.
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
@@ -132,14 +143,19 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
 
             <div
               className={styles["projects-block"]}
-              onClick={() => router.push('/projects/getmyjobs')}
+              onClick={() => router.push("/projects/getmyjobs")}
               role="button"
               tabIndex={0}
             >
@@ -164,7 +180,12 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
@@ -196,7 +217,12 @@ const Projects = () => {
                   <p>My first case study while learning about UI UX</p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
@@ -226,11 +252,17 @@ const Projects = () => {
                     Cube Assignment <span>[Design assignment]</span>
                   </h3>
                   <p>
-                    A design challenge focused on revamping a website and making it more user-friendly and responsive.
+                    A design challenge focused on revamping a website and making
+                    it more user-friendly and responsive.
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
@@ -260,12 +292,18 @@ const Projects = () => {
                     Career Pulse <span>[Design assignment]</span>
                   </h3>
                   <p>
-                    A career development platform design that helps professionals
-                    track their growth and connect with opportunities.
+                    A career development platform design that helps
+                    professionals track their growth and connect with
+                    opportunities.
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
@@ -295,17 +333,24 @@ const Projects = () => {
                     Brass Globe <span>[Design assignment]</span>
                   </h3>
                   <p>
-                  Heuristic Evaluation of Brass Globe website to improve user experience for desktop and mobile usability focusing on home page and product page.
+                    Heuristic Evaluation of Brass Globe website to improve user
+                    experience for desktop and mobile usability focusing on home
+                    page and product page.
                   </p>
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
-                  <Image src={ForwardIcon} alt="Forward Icon" width={32} height={32} />
+                  <Image
+                    src={ForwardIcon}
+                    alt="Forward Icon"
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
