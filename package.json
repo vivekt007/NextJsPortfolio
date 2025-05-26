@@ -20,5 +20,8 @@
     "react-icons": "^5.5.0",
     "split-type": "^0.3.4",
     "sweetalert2": "^11.19.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }

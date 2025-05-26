@@ -149,12 +149,12 @@
 }
 
 .projects-block-det-col1 span {
-  color: var(--Grey-3);
+  color: var(--Grey-2);
   font-size: 16px;
 }
 
 .projects-block-det-col1 p {
-  color: var(--Grey-3);
+  color: var(--Grey-2);
   font-size: 16px;
   line-height: 120%;
 }

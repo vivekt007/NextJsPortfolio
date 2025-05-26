@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "../Gallery.module.css";
 
 const images = [
@@ -27,13 +28,16 @@ export default function Gallery() {
   return (
     <div className={styles.slider}>
       {images.map((src, index) => (
-        <img
+        <Image
           key={index}
           src={src}
           className={`${styles.slide} ${
             index === current ? styles.active : ""
           }`}
           alt={`Slide ${index}`}
+          width={500}
+          height={300}
+          priority={index === 0}
         />
       ))}
     </div>

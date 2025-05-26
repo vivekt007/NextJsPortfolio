@@ -8,7 +8,6 @@ function GithubLastUpdate() {
 
     useEffect(() => {
         fetch("https://api.github.com/repos/vivekt007/NextJsPortfolio")
-        // https://github.com/vivekt007/NextJsPortfolio
             .then((response) => response.json())
             .then((data) => {
                 if (data.pushed_at) {

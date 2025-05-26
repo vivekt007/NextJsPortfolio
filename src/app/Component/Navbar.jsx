@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import myImage from "/public/MyImages/ProfilePicture.jpg"; 
-import HomeIcon from "/public/Icons/HomeIcon.svg";
+import HomeIcon from "/public/Icons/HomeIcon.svg?url";
 
 const Navbar = () => {
   return (

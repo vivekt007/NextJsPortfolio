@@ -11,7 +11,6 @@
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  /* gap: 40px; */
   background-color: var(--Background-overlay);
   height: 90dvh;
   width: 100%;
@@ -42,31 +41,19 @@
   width: 100%;
 }
 
-.projectName a {
-  display: flex;
-  gap: 8px;
+.backButton {
+  color: var(--Grey-3);
+  text-decoration: none;
+  font-size: 16px;
   transition: 0.3s;
-}
-
-.projectName a:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.documentLink {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  border: 1px solid var(--Grey-1);
-  transition: 0.3s;
+  gap: 4px;
 }
 
-.documentLink:hover {
-  transform: translate(4px, -4px);
-  box-shadow: -4px 4px var(--Grey-5);
-  cursor: pointer;
+.backButton:hover {
+  color: var(--Grey-1);
+  transform: translateX(-4px);
 }
 
 .projectRow {
@@ -125,46 +112,7 @@
 
 .projectRowCol img {
   width: 100%;
-}
-
-.webLink {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.webLink:hover {
-  transform: scale(1.1);
-}
-
-.webLink img {
-  width: 24px;
-  border: none;
-}
-
-.designs img {
-  width: 100%;
-}
-
-.projectPara {
-  color: var(--Grey-3);
-  padding: 12px;
-}
-
-.designImgContainer {
-  display: flex;
-  gap: 1rem;
-}
-
-.designImgContainer .projectRowCol {
-  width: 100%;
-  padding: 12px 0 0 0;
-}
-
-.designImgContainer .projectRowCol img {
-  border: none;
+  border-radius: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -182,26 +130,11 @@
     font-size: 32px;
   }
 
-  .designImgContainer {
+  .projectImageRow {
     flex-wrap: wrap;
   }
 
   .projectRowCol {
     width: 100%;
   }
-}
-
-.backButton {
-  color: var(--Grey-3);
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.backButton:hover {
-  color: var(--Grey-1);
-  transform: translateX(-4px);
-}
+} 

@@ -8,21 +8,21 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 // Imported icons
-import MyLogo from "/public/Icons/Logo.svg";
+import MyLogo from "/public/Icons/Logo.svg?url";
 import myImage from "/public/MyImages/ProfilePicture.jpg";
-import AvailableIcon from "/public/Icons/Available-icon.svg";
-import LocationWhiteIcon from "/public/Icons/LocationIcon.svg";
-import LocationIcon from "/public/Icons/LocationTagIcon.svg";
-import ExperienceIcon from "/public/Icons/LinkedInTagIcon.svg";
-import WorkIcon from "/public/Icons/WorkTagIcon.svg";
-import GalleryIcon from "/public/Icons/GalleryTagIcon.svg";
-import MailIcon from "/public/Icons/MailTagIcon.svg";
-import LinkedInIcon from "/public/Icons/LinkedInSocialIcon.svg";
-import BehanceIcon from "/public/Icons/BehanceSocialIcon.svg";
-import InstagramIcon from "/public/Icons/InstagramSocialIcon.svg";
+import AvailableIcon from "/public/Icons/Available-icon.svg?url";
+import LocationWhiteIcon from "/public/Icons/LocationIcon.svg?url";
+import LocationIcon from "/public/Icons/LocationTagIcon.svg?url";
+import ExperienceIcon from "/public/Icons/LinkedInTagIcon.svg?url";
+import WorkIcon from "/public/Icons/WorkTagIcon.svg?url";
+import GalleryIcon from "/public/Icons/GalleryTagIcon.svg?url";
+import MailIcon from "/public/Icons/MailTagIcon.svg?url";
+import LinkedInIcon from "/public/Icons/LinkedInSocialIcon.svg?url";
+import BehanceIcon from "/public/Icons/BehanceSocialIcon.svg?url";
+import InstagramIcon from "/public/Icons/InstagramSocialIcon.svg?url";
 
 // Imported logos
-import IvariLogo from "/public/Logo/iVariLogo.svg";
+import IvariLogo from "/public/Logo/iVariLogo.svg?url";
 import DesignerrsLogo from "/public/Logo/DesignerrsLogo.png";
 import HamdanLogo from "/public/Logo/HamdanInfocomLogo.png";
 
@@ -348,6 +348,9 @@ export default function Home() {
       </div>
 
       <div className="home-col2">
+        <div className="home-c2-row1">
+        <iframe src='https://my.spline.design/robotarm-MLAnY9h7KVS7jetxUohM1yfp/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
         <div className="Skills-block">
           <DesignAccordion />
           <DevAccordion />
