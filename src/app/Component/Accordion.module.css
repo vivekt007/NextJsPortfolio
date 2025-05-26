@@ -1,0 +1,72 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: var(--Grey-7);
+  color: var(--Grey-2);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 8px;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 1px;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid var(--Grey-6);
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.box {
+  width: 100%;
+  background-color: var(--Grey-7);
+  color: var(--Grey-2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.expanded {
+  padding: 12px;
+  height: fit-content;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.expanded div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+}
+
+.expanded p {
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: var(--Grey-2);
+  padding:  8px;
+  border-radius: 8px;
+  background-color: var(--Grey-6);
+  width: fit-content;
+  height: fit-content;
+}

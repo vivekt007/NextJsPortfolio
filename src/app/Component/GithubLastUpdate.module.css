@@ -1,0 +1,8 @@
+.github-last-update {
+    text-align: center;
+}
+
+.github-last-update p {
+    color: var(--Grey-3);
+    font-size: 16px;
+} 
