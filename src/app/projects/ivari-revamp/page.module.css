@@ -2,6 +2,9 @@
   padding: 32px 64px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
   gap: 40px;
   background-color: var(--Background);
   color: var(--Grey-1);
@@ -172,7 +175,23 @@
 
 @media (max-width: 768px) {
   .project {
-    padding: 80px 16px;
+    padding: 16px;
+  }
+
+  .projectContainer {
+    height: 100dvh;
+  }
+
+  .projectTitle,
+  .projectName {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projectTitle,
+  .projectRow,
+  .projectImageRow {
+    padding: 16px;
   }
 
   .projectTitle h1 {

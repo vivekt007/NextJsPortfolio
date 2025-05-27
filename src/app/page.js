@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
@@ -33,6 +33,7 @@ import DesignAccordion from "./Component/DesignAccordion.jsx";
 import DevAccordion from "./Component/DevAccordion.jsx";
 import ToolsAccordian from "./Component/ToolsAccordian.jsx";
 import OthersAccordian from "./Component/OthersAccordian.jsx";
+import LoadingScreen from "./Component/LoadingScreen.jsx";
 
 export default function Home() {
   const ExpandSkillBlock = () => {};
@@ -42,6 +43,16 @@ export default function Home() {
   const [result, setResult] = useState("");
   const formRef = useRef(null);
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time or wait for actual content to load
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -74,6 +85,7 @@ export default function Home() {
 
   return (
     <div className="home">
+      {isLoading && <LoadingScreen />}
       <div className="home-col1">
         <div className="home-c1-row1">
           <Image

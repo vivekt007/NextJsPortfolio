@@ -48,3 +48,9 @@
   color: var(--Grey-2);
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px;
+  }
+}

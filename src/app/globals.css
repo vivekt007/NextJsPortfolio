@@ -559,7 +559,7 @@ body {
   .home {
     flex-direction: column;
     height: 100%;
-    padding: 16px;
+    padding: 8px;
   }
 
   .home-c1-r2-row1,
@@ -646,7 +646,7 @@ body {
 /* Mobile: 480px and below */
 @media (max-width: 480px) {
   .container {
-    padding: 1rem;
+    padding: 8px;
     text-align: center;
   }
 }
@@ -654,7 +654,7 @@ body {
 /* Mobile: 360px and below */
 @media (max-width: 360px) {
   .container {
-    padding: 1rem;
+    padding: 8px;
     text-align: center;
   }
 }

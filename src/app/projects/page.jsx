@@ -285,7 +285,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src="/ProjectThumbnails/Careerpulse.png"
+                  src="/ProjectThumbnails/Careerpulsethumbnail.png"
                   alt="Career pulse"
                   width={500}
                   height={300}
