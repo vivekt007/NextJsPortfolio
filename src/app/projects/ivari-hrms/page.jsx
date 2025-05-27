@@ -10,18 +10,18 @@ import Navbar from "@/app/Component/Navbar.jsx";
 import Footer from "@/app/Component/Footer";
 
 // designs
-import iVariHome from "/designs/iVariHRMS/Home.png";
-import iVariSalary from "/designs/iVariHRMS/Salaryslips.png";
-import iVariLeave from "/designs/iVariHRMS/Leave.png";
-import iVariPunchIn from "/designs/iVariHRMS/PunchIn.png";
-import iVariSales from "/designs/iVariHRMS/SalesUpload.png";
-import iVariOutreach from "/designs/iVariHRMS/OutReach.png";
-import iVariDashboard from "/designs/iVariHRMS/HRMSDashboard.png";
-import iVariAttendance from "/designs/iVariHRMS/HRMSAttendance.png";
-import iVariDashboardLeave from "/designs/iVariHRMS/HRMSDashboardLeave.png";
-import iVariDashboardSales from "/designs/iVariHRMS/HRMSDashboardSales.png";
-import iVariDashboardSalary from "/designs/iVariHRMS/HRMSDashboardSalary.png";
-import iVariDashboardOutreach from "/designs/iVariHRMS/HRMSDashboardOutReach.png";
+// import iVariHome from "/designs/iVariHRMS/Home.png";
+// import iVariSalary from "/designs/iVariHRMS/Salaryslips.png";
+// import iVariLeave from "/designs/iVariHRMS/Leave.png";
+// import iVariPunchIn from "/designs/iVariHRMS/PunchIn.png";
+// import iVariSales from "/designs/iVariHRMS/SalesUpload.png";
+// import iVariOutreach from "/designs/iVariHRMS/OutReach.png";
+// import iVariDashboard from "/designs/iVariHRMS/HRMSDashboard.png";
+// import iVariAttendance from "/designs/iVariHRMS/HRMSAttendance.png";
+// import iVariDashboardLeave from "/designs/iVariHRMS/HRMSDashboardLeave.png";
+// import iVariDashboardSales from "/designs/iVariHRMS/HRMSDashboardSales.png";
+// import iVariDashboardSalary from "/designs/iVariHRMS/HRMSDashboardSalary.png";
+// import iVariDashboardOutreach from "/designs/iVariHRMS/HRMSDashboardOutReach.png";
 
 export default function IvariHRMS() {
   // Animations effect
