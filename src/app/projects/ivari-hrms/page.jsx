@@ -114,78 +114,90 @@ export default function IvariHRMS() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src="/designs/iVariHRMS/Home.png"
+              src="/Designs/iVariHRMS/Home.png"
               alt="Home Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/PunchIn.png"
+              src="/Designs/iVariHRMS/PunchIn.png"
               alt="Punch In Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/Leave.png"
+              src="/Designs/iVariHRMS/Leave.png"
               alt="Leave Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/SalesUpload.png"
+              src="/Designs/iVariHRMS/SalesUpload.png"
               alt="Sales Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/Salaryslips.png"
+              src="/Designs/iVariHRMS/Salaryslips.png"
               alt="Salary Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/OutReach.png"
+              src="/Designs/iVariHRMS/OutReach.png"
               alt="Outreach Page"
               width={500}
               height={300}
+              priority
             />
           </div>
           <div className={styles.projectRowCol}>
             <Image
-              src="/designs/iVariHRMS/HRMSDashboard.png"
+              src="/Designs/iVariHRMS/HRMSDashboard.png"
               alt="Dashboard"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/HRMSAttendance.png"
+              src="/Designs/iVariHRMS/HRMSAttendance.png"
               alt="Attendance"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/HRMSDashboardLeave.png"
+              src="/Designs/iVariHRMS/HRMSDashboardLeave.png"
               alt="Dashboard Leave"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/HRMSDashboardSales.png"
+              src="/Designs/iVariHRMS/HRMSDashboardSales.png"
               alt="Dashboard Sales"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/HRMSDashboardSalary.png"
+              src="/Designs/iVariHRMS/HRMSDashboardSalary.png"
               alt="Dashboard Salary"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariHRMS/HRMSDashboardOutReach.png"
+              src="/Designs/iVariHRMS/HRMSDashboardOutReach.png"
               alt="Dashboard Outreach"
               width={500}
               height={300}
+              priority
             />
           </div>
         </div>

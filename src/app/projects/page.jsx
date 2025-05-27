@@ -70,6 +70,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -107,6 +108,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -148,6 +150,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -185,6 +188,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -222,6 +226,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -262,6 +267,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -303,6 +309,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -344,6 +351,7 @@ const Projects = () => {
                     alt="Forward Icon"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>

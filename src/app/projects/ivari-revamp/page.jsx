@@ -47,6 +47,7 @@ export default function IvariRevamp() {
               alt="File" 
               width={24} 
               height={24}
+              priority
             />
             <span>DOCUMENTATION</span>
           </a>
@@ -96,30 +97,34 @@ export default function IvariRevamp() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src="/designs/iVariRevamp/iVariHome.png"
+              src="/Designs/iVariRevamp/iVariHome.png"
               alt="Home Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariRevamp/iVariProduct.png"
+              src="/Designs/iVariRevamp/iVariProduct.png"
               alt="Product Page"
               width={500}
               height={300}
+              priority
             />
           </div>
           <div className={styles.projectRowCol}>
             <Image
-              src="/designs/iVariRevamp/iVariAbout.png"
+              src="/Designs/iVariRevamp/iVariAbout.png"
               alt="About Page"
               width={500}
               height={300}
+              priority
             />
             <Image
-              src="/designs/iVariRevamp/iVariServices.png"
+              src="/Designs/iVariRevamp/iVariServices.png"
               alt="Services Page"
               width={500}
               height={300}
+              priority
             />
             <a
               className={styles.webLink}
@@ -133,6 +138,7 @@ export default function IvariRevamp() {
                 alt="link" 
                 width={24} 
                 height={24}
+                priority
               />
             </a>
           </div>

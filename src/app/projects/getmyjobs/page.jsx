@@ -77,16 +77,18 @@ export default function Getmyjobs() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src="/designs/Getmyjobs/Loginpage.png"
+              src="/Designs/Getmyjobs/Loginpage.png"
               alt="Login Page"
               width={500}
               height={350}
+              priority
             />
             <Image
-              src="/designs/Getmyjobs/Homepage.png"
+              src="/Designs/Getmyjobs/Homepage.png"
               alt="Home Page"
               width={500}
               height={350}
+              priority
             />
           </div>
         </div>
