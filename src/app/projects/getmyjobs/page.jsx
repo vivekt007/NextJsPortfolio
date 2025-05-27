@@ -6,8 +6,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import getmyjobsHome from "../../../public/designs/Getmyjobs/Homepage.png";
-import GetmyJobsLogin from "../../../public/designs/Getmyjobs/Loginpage.png";
+import getmyjobsHome from "/designs/Getmyjobs/Homepage.png";
+import GetmyJobsLogin from "/designs/Getmyjobs/Loginpage.png";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
@@ -77,13 +77,13 @@ export default function Getmyjobs() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src={GetmyJobsLogin}
+              src="/designs/Getmyjobs/Loginpage.png"
               alt="Login Page"
               width={500}
               height={350}
             />
             <Image
-              src={getmyjobsHome}
+              src="/designs/Getmyjobs/Homepage.png"
               alt="Home Page"
               width={500}
               height={350}

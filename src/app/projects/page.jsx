@@ -9,18 +9,18 @@ import Footer from "../Component/Footer.jsx";
 import styles from "./Project.module.css";
 
 // Imported Icons
-import ForwardIcon from "../../public/Icons/ForwardIcon.svg?url";
-import LockIcon from "../../public/Icons/LockIcon.svg?url";
+import ForwardIcon from "/Icons/ForwardIcon.svg?url";
+import LockIcon from "/Icons/LockIcon.svg?url";
 
 // Imported Images
-import IvariRevamp from "../../public/ProjectThumbnails/IvariRevamp.png";
-import IvariHRMS from "../../public/ProjectThumbnails/IvariHrms.png";
-import StonePaper from "../../public/ProjectThumbnails/StonePaper.png";
-import GetmyJobs from "../../public/ProjectThumbnails/Getmyjobs.png";
-import CampusBuy from "../../public/ProjectThumbnails/CampusBuy.png";
-import CubeAssignment from "../../public/ProjectThumbnails/CubeAssignment.png";
-import Careerpulse from "../../public/ProjectThumbnails/Careerpulsethumbnail.png";
-import BrassGlobe from "../../public/ProjectThumbnails/BrassGlobe.png";
+import IvariRevamp from "/ProjectThumbnails/IvariRevamp.png";
+import IvariHRMS from "/ProjectThumbnails/IvariHrms.png";
+import StonePaper from "/ProjectThumbnails/StonePaper.png";
+import GetmyJobs from "/ProjectThumbnails/Getmyjobs.png";
+import CampusBuy from "/ProjectThumbnails/CampusBuy.png";
+import CubeAssignment from "/ProjectThumbnails/CubeAssignment.png";
+import Careerpulse from "/ProjectThumbnails/Careerpulsethumbnail.png";
+import BrassGlobe from "/ProjectThumbnails/BrassGlobe.png";
 
 const Projects = () => {
   const router = useRouter();
@@ -47,7 +47,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={IvariRevamp}
+                  src="/ProjectThumbnails/IvariRevamp.png"
                   alt="Ivari Revamp Project"
                   width={500}
                   height={300}
@@ -66,7 +66,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -83,7 +83,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={IvariHRMS}
+                  src="/ProjectThumbnails/IvariHrms.png"
                   alt="Iavri HRMS Project"
                   width={500}
                   height={300}
@@ -103,7 +103,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -124,7 +124,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={StonePaper}
+                  src="/ProjectThumbnails/StonePaper.png"
                   alt="Ecommerce Project"
                   width={500}
                   height={300}
@@ -144,7 +144,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -161,7 +161,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={GetmyJobs}
+                  src="/ProjectThumbnails/Getmyjobs.png"
                   alt="Getmyjobs Project"
                   width={500}
                   height={300}
@@ -181,7 +181,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -202,7 +202,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={CampusBuy}
+                  src="/ProjectThumbnails/CampusBuy.png"
                   alt="CampusBuy"
                   width={500}
                   height={300}
@@ -218,7 +218,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -239,7 +239,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={CubeAssignment}
+                  src="/ProjectThumbnails/CubeAssignment.png"
                   alt="CubeAssignment"
                   width={500}
                   height={300}
@@ -258,7 +258,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -279,7 +279,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={Careerpulse}
+                  src="/ProjectThumbnails/Careerpulse.png"
                   alt="Career pulse"
                   width={500}
                   height={300}
@@ -299,7 +299,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}
@@ -320,7 +320,7 @@ const Projects = () => {
             >
               <div className={styles["projects-block-image"]}>
                 <Image
-                  src={BrassGlobe}
+                  src="/ProjectThumbnails/BrassGlobe.png"
                   alt="Brass Globe"
                   width={500}
                   height={300}
@@ -340,7 +340,7 @@ const Projects = () => {
                 </div>
                 <div className={styles["projects-block-det-col2"]}>
                   <Image
-                    src={ForwardIcon}
+                    src="/Icons/ForwardIcon.svg"
                     alt="Forward Icon"
                     width={32}
                     height={32}

@@ -6,12 +6,12 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import iVariHome from "../../../public/designs/iVariRevamp/iVariHome.png";
-import iVariAbout from "../../../public/designs/iVariRevamp/iVariAbout.png";
-import iVariServices from "../../../public/designs/iVariRevamp/iVariServices.png";
-import iVariProduct from "../../../public/designs/iVariRevamp/iVariProduct.png";
-import FileIcon from "../../../public/Icons/FileIsIcon.svg?url";
-import LinkIcon from "../../../public/Icons/link.svg?url";
+import iVariHome from "/designs/iVariRevamp/iVariHome.png";
+import iVariAbout from "/designs/iVariRevamp/iVariAbout.png";
+import iVariServices from "/designs/iVariRevamp/iVariServices.png";
+import iVariProduct from "/designs/iVariRevamp/iVariProduct.png";
+import FileIcon from "/Icons/FileIsIcon.svg?url";
+import LinkIcon from "/Icons/link.svg?url";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
@@ -43,7 +43,7 @@ export default function IvariRevamp() {
             className={styles.documentLink}
           >
             <Image 
-              src={FileIcon}
+              src="/Icons/FileIsIcon.svg"
               alt="File" 
               width={24} 
               height={24}
@@ -96,13 +96,13 @@ export default function IvariRevamp() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariHome}
+              src="/designs/iVariRevamp/iVariHome.png"
               alt="Home Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariProduct}
+              src="/designs/iVariRevamp/iVariProduct.png"
               alt="Product Page"
               width={500}
               height={300}
@@ -110,13 +110,13 @@ export default function IvariRevamp() {
           </div>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariAbout}
+              src="/designs/iVariRevamp/iVariAbout.png"
               alt="About Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariServices}
+              src="/designs/iVariRevamp/iVariServices.png"
               alt="Services Page"
               width={500}
               height={300}
@@ -129,7 +129,7 @@ export default function IvariRevamp() {
             >
               <span>Website</span>
               <Image 
-                src={LinkIcon}
+                src="/Icons/link.svg"
                 alt="link" 
                 width={24} 
                 height={24}

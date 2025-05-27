@@ -10,18 +10,18 @@ import Navbar from "@/app/Component/Navbar.jsx";
 import Footer from "@/app/Component/Footer";
 
 // designs
-import iVariHome from "../../../public/designs/iVariHRMS/Home.png";
-import iVariSalary from "../../../public/designs/iVariHRMS/Salaryslips.png";
-import iVariLeave from "../../../public/designs/iVariHRMS/Leave.png";
-import iVariPunchIn from "../../../public/designs/iVariHRMS/PunchIn.png";
-import iVariSales from "../../../public/designs/iVariHRMS/SalesUpload.png";
-import iVariOutreach from "../../../public/designs/iVariHRMS/OutReach.png";
-import iVariDashboard from "../../../public/designs/iVariHRMS/HRMSDashboard.png";
-import iVariAttendance from "../../../public/designs/iVariHRMS/HRMSAttendance.png";
-import iVariDashboardLeave from "../../../public/designs/iVariHRMS/HRMSDashboardLeave.png";
-import iVariDashboardSales from "../../../public/designs/iVariHRMS/HRMSDashboardSales.png";
-import iVariDashboardSalary from "../../../public/designs/iVariHRMS/HRMSDashboardSalary.png";
-import iVariDashboardOutreach from "../../../public/designs/iVariHRMS/HRMSDashboardOutReach.png";
+import iVariHome from "/designs/iVariHRMS/Home.png";
+import iVariSalary from "/designs/iVariHRMS/Salaryslips.png";
+import iVariLeave from "/designs/iVariHRMS/Leave.png";
+import iVariPunchIn from "/designs/iVariHRMS/PunchIn.png";
+import iVariSales from "/designs/iVariHRMS/SalesUpload.png";
+import iVariOutreach from "/designs/iVariHRMS/OutReach.png";
+import iVariDashboard from "/designs/iVariHRMS/HRMSDashboard.png";
+import iVariAttendance from "/designs/iVariHRMS/HRMSAttendance.png";
+import iVariDashboardLeave from "/designs/iVariHRMS/HRMSDashboardLeave.png";
+import iVariDashboardSales from "/designs/iVariHRMS/HRMSDashboardSales.png";
+import iVariDashboardSalary from "/designs/iVariHRMS/HRMSDashboardSalary.png";
+import iVariDashboardOutreach from "/designs/iVariHRMS/HRMSDashboardOutReach.png";
 
 export default function IvariHRMS() {
   // Animations effect
@@ -114,37 +114,37 @@ export default function IvariHRMS() {
         <div className={styles.projectImageRow}>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariHome}
+              src="/designs/iVariHRMS/Home.png"
               alt="Home Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariPunchIn}
+              src="/designs/iVariHRMS/PunchIn.png"
               alt="Punch In Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariLeave}
+              src="/designs/iVariHRMS/Leave.png"
               alt="Leave Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariSales}
+              src="/designs/iVariHRMS/SalesUpload.png"
               alt="Sales Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariSalary}
+              src="/designs/iVariHRMS/Salaryslips.png"
               alt="Salary Page"
               width={500}
               height={300}
             />
             <Image
-              src={iVariOutreach}
+              src="/designs/iVariHRMS/OutReach.png"
               alt="Outreach Page"
               width={500}
               height={300}
@@ -152,37 +152,37 @@ export default function IvariHRMS() {
           </div>
           <div className={styles.projectRowCol}>
             <Image
-              src={iVariDashboard}
+              src="/designs/iVariHRMS/HRMSDashboard.png"
               alt="Dashboard"
               width={500}
               height={300}
             />
             <Image
-              src={iVariAttendance}
+              src="/designs/iVariHRMS/HRMSAttendance.png"
               alt="Attendance"
               width={500}
               height={300}
             />
             <Image
-              src={iVariDashboardLeave}
+              src="/designs/iVariHRMS/HRMSDashboardLeave.png"
               alt="Dashboard Leave"
               width={500}
               height={300}
             />
             <Image
-              src={iVariDashboardSales}
+              src="/designs/iVariHRMS/HRMSDashboardSales.png"
               alt="Dashboard Sales"
               width={500}
               height={300}
             />
             <Image
-              src={iVariDashboardSalary}
+              src="/designs/iVariHRMS/HRMSDashboardSalary.png"
               alt="Dashboard Salary"
               width={500}
               height={300}
             />
             <Image
-              src={iVariDashboardOutreach}
+              src="/designs/iVariHRMS/HRMSDashboardOutReach.png"
               alt="Dashboard Outreach"
               width={500}
               height={300}
