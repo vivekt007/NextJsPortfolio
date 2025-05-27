@@ -6,8 +6,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import getmyjobsHome from "/public/designs/Getmyjobs/Homepage.png";
-import GetmyJobsLogin from "/public/designs/Getmyjobs/Loginpage.png";
+import getmyjobsHome from "../../../public/designs/Getmyjobs/Homepage.png";
+import GetmyJobsLogin from "../../../public/designs/Getmyjobs/Loginpage.png";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";

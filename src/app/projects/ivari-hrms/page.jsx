@@ -10,18 +10,18 @@ import Navbar from "@/app/Component/Navbar.jsx";
 import Footer from "@/app/Component/Footer";
 
 // designs
-import iVariHome from "/public/designs/iVariHRMS/Home.png";
-import iVariSalary from "/public/designs/iVariHRMS/Salaryslips.png";
-import iVariLeave from "/public/designs/iVariHRMS/Leave.png";
-import iVariPunchIn from "/public/designs/iVariHRMS/PunchIn.png";
-import iVariSales from "/public/designs/iVariHRMS/SalesUpload.png";
-import iVariOutreach from "/public/designs/iVariHRMS/OutReach.png";
-import iVariDashboard from "/public/designs/iVariHRMS/HRMSDashboard.png";
-import iVariAttendance from "/public/designs/iVariHRMS/HRMSAttendance.png";
-import iVariDashboardLeave from "/public/designs/iVariHRMS/HRMSDashboardLeave.png";
-import iVariDashboardSales from "/public/designs/iVariHRMS/HRMSDashboardSales.png";
-import iVariDashboardSalary from "/public/designs/iVariHRMS/HRMSDashboardSalary.png";
-import iVariDashboardOutreach from "/public/designs/iVariHRMS/HRMSDashboardOutReach.png";
+import iVariHome from "../../../public/designs/iVariHRMS/Home.png";
+import iVariSalary from "../../../public/designs/iVariHRMS/Salaryslips.png";
+import iVariLeave from "../../../public/designs/iVariHRMS/Leave.png";
+import iVariPunchIn from "../../../public/designs/iVariHRMS/PunchIn.png";
+import iVariSales from "../../../public/designs/iVariHRMS/SalesUpload.png";
+import iVariOutreach from "../../../public/designs/iVariHRMS/OutReach.png";
+import iVariDashboard from "../../../public/designs/iVariHRMS/HRMSDashboard.png";
+import iVariAttendance from "../../../public/designs/iVariHRMS/HRMSAttendance.png";
+import iVariDashboardLeave from "../../../public/designs/iVariHRMS/HRMSDashboardLeave.png";
+import iVariDashboardSales from "../../../public/designs/iVariHRMS/HRMSDashboardSales.png";
+import iVariDashboardSalary from "../../../public/designs/iVariHRMS/HRMSDashboardSalary.png";
+import iVariDashboardOutreach from "../../../public/designs/iVariHRMS/HRMSDashboardOutReach.png";
 
 export default function IvariHRMS() {
   // Animations effect

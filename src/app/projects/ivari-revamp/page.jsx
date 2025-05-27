@@ -6,12 +6,12 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // designs
-import iVariHome from "/public/designs/iVariRevamp/iVariHome.png";
-import iVariAbout from "/public/designs/iVariRevamp/iVariAbout.png";
-import iVariServices from "/public/designs/iVariRevamp/iVariServices.png";
-import iVariProduct from "/public/designs/iVariRevamp/iVariProduct.png";
-import FileIcon from "/public/Icons/FileIsIcon.svg?url";
-import LinkIcon from "/public/Icons/link.svg?url";
+import iVariHome from "../../../public/designs/iVariRevamp/iVariHome.png";
+import iVariAbout from "../../../public/designs/iVariRevamp/iVariAbout.png";
+import iVariServices from "../../../public/designs/iVariRevamp/iVariServices.png";
+import iVariProduct from "../../../public/designs/iVariRevamp/iVariProduct.png";
+import FileIcon from "../../../public/Icons/FileIsIcon.svg?url";
+import LinkIcon from "../../../public/Icons/link.svg?url";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
