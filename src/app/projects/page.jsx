@@ -9,8 +9,8 @@ import Footer from "../Component/Footer.jsx";
 import styles from "./Project.module.css";
 
 // Imported Icons
-import ForwardIcon from "/public/Icons/ForwardIcon.svg";
-import LockIcon from "/public/Icons/LockIcon.svg";
+import ForwardIcon from "/public/Icons/ForwardIcon.svg?url";
+import LockIcon from "/public/Icons/LockIcon.svg?url";
 
 // Imported Images
 import IvariRevamp from "/public/ProjectThumbnails/IvariRevamp.png";

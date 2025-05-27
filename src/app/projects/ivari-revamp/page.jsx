@@ -10,6 +10,8 @@ import iVariHome from "/public/designs/iVariRevamp/iVariHome.png";
 import iVariAbout from "/public/designs/iVariRevamp/iVariAbout.png";
 import iVariServices from "/public/designs/iVariRevamp/iVariServices.png";
 import iVariProduct from "/public/designs/iVariRevamp/iVariProduct.png";
+import FileIcon from "/public/Icons/FileIsIcon.svg?url";
+import LinkIcon from "/public/Icons/link.svg?url";
 
 // components
 import Navbar from "@/app/Component/Navbar.jsx";
@@ -41,7 +43,7 @@ export default function IvariRevamp() {
             className={styles.documentLink}
           >
             <Image 
-              src="/Icons/FileIsIcon.svg?url"
+              src={FileIcon}
               alt="File" 
               width={24} 
               height={24}
@@ -96,20 +98,28 @@ export default function IvariRevamp() {
             <Image
               src={iVariHome}
               alt="Home Page"
+              width={500}
+              height={300}
             />
             <Image
               src={iVariProduct}
               alt="Product Page"
+              width={500}
+              height={300}
             />
           </div>
           <div className={styles.projectRowCol}>
             <Image
               src={iVariAbout}
               alt="About Page"
+              width={500}
+              height={300}
             />
             <Image
               src={iVariServices}
               alt="Services Page"
+              width={500}
+              height={300}
             />
             <a
               className={styles.webLink}
@@ -119,7 +129,7 @@ export default function IvariRevamp() {
             >
               <span>Website</span>
               <Image 
-                src="/icons/link.svg" 
+                src={LinkIcon}
                 alt="link" 
                 width={24} 
                 height={24}
