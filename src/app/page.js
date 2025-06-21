@@ -34,6 +34,7 @@ import DevAccordion from "./Component/DevAccordion.jsx";
 import ToolsAccordian from "./Component/ToolsAccordian.jsx";
 import OthersAccordian from "./Component/OthersAccordian.jsx";
 import LoadingScreen from "./Component/LoadingScreen.jsx";
+import Navbar from "./Component/Navbar.jsx";
 
 export default function Home() {
   const ExpandSkillBlock = () => {};
@@ -44,15 +45,28 @@ export default function Home() {
   const formRef = useRef(null);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+  const [contentVisible, setContentVisible] = useState(false);
 
   useEffect(() => {
     // Simulate loading time or wait for actual content to load
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000); 
+      setShowContent(true);
+    }, 3000); // 3 seconds
 
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (showContent) {
+      // Trigger the blur/opacity animation after a short delay
+      const animTimer = setTimeout(() => {
+        setContentVisible(true);
+      }, 50); // 50ms delay to allow DOM to render
+      return () => clearTimeout(animTimer);
+    }
+  }, [showContent]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -86,282 +100,291 @@ export default function Home() {
   return (
     <div className="home">
       {isLoading && <LoadingScreen />}
-      <div className="home-col1">
-        <div className="home-c1-row1">
-          <Image
-            src={myImage}
-            alt="Hero background"
-            width={110}
-            height={110}
-            priority
-            className="home-c1-r1-r1 Profile-picture object-cover"
-          />
-
-          <div className="home-c1-r1-r2">
-            <h1>
-              Hello I'm Vivek Tigadi - User Experience Designer.{" "}
-              <span className="Grey-2">Previously a Front-end Developer.</span>
-            </h1>
-            <p>
-              A designer obsessed with creating digital experiences and I can
-              code too! I believe good design is as simple and minimal as
-              possible.
-            </p>
-          </div>
-          <div className="home-c1-r1-r3">
-            <div className="home-c1-r1-r3-col1">
-              <Image
-                src={LocationWhiteIcon}
-                alt="Available Icon"
-                width={16}
-                height={16}
-              />
-              <p>Bengaluru, Mumbai, Pune</p>
-            </div>
-            <div className="home-c1-r1-r3-col2">
-              <Image
-                src={AvailableIcon}
-                alt="Available Icon"
-                width={16}
-                height={16}
-              />
-              <p>Available for work</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="home-c1-row2">
-          <div className="home-c1-r2-row1">
-            <div className="home-c1-r2-r1-col1 portfolio-block">
-              <div className="home-r2-header">
-                <div className="home-r2-header-tag">
-                  <Image
-                    src={ExperienceIcon}
-                    alt="Experience Icon"
-                    width={12}
-                    height={12}
-                  />
-                  <p>EXPERIENCE</p>
-                </div>
-              </div>
-              <div className="exp-container">
-                <div className="exp-container-row1">
-                  <div className="exp-container-r1-col1 exp-comp-logo-container">
-                    <Image
-                      src={IvariLogo}
-                      alt="Ivari Logo"
-                      width={32}
-                      height={32}
-                      className="exp-comp-logo"
-                    />
-                  </div>
-                  <div className="exp-container-r1-col2">
-                    <div className="exp-container-r1-c1-row1 exp-title">
-                      <h6>
-                        UI UX Designer <span>Full time</span>
-                      </h6>
-                    </div>
-                    <div className="exp-container-r1-c1-row2 exp-comp-details">
-                      <a href="https://www.ivari.in/">iVari</a>
-                      <p>|</p>
-                      <span>May 24 - Mar 25</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="exp-container-row2">
-                  <div className="exp-container-r2-col1 exp-comp-logo-container">
-                    <Image
-                      src={DesignerrsLogo}
-                      alt="Designerrs Logo"
-                      width={32}
-                      height={32}
-                      className="exp-comp-logo"
-                    />
-                  </div>
-                  <div className="exp-container-r2-col2">
-                    <div className="exp-container-r2-c1-row1 exp-title">
-                      <h6>
-                        UI UX Design <span>Course</span>
-                      </h6>
-                    </div>
-                    <div className="exp-container-r2-c1-row2 exp-comp-details">
-                      <a href="https://designerrs.com/designerrs-certification/000d87-vivek-tigadi/">
-                        Designerrs
-                      </a>
-                      <p>|</p>
-                      <span>Nov 23 - Mar 24</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="exp-container-row3">
-                  <div className="exp-container-r3-col1 exp-comp-logo-container">
-                    <Image
-                      src={HamdanLogo}
-                      alt="Hamdan Logo"
-                      width={32}
-                      height={32}
-                      className="exp-comp-logo"
-                    />
-                  </div>
-                  <div className="exp-container-r3-col2">
-                    <div className="exp-container-r3-c1-row1 exp-title">
-                      <h6>
-                        Front End Dev <span>Intern</span>
-                      </h6>
-                    </div>
-                    <div className="exp-container-r3-c1-row2 exp-comp-details">
-                      <a href="https://hamdaninfocom.in/">Hamdan</a>
-                      <p>|</p>
-                      <span>Oct 22 - Nov 22</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="home-c1-r2-r1-col2 portfolio-block"
-              onClick={() => router.push("/projects")}
-            >
-              <div className="home-r2-header">
-                <div className="home-r2-header-tag">
-                  <Image
-                    src={WorkIcon}
-                    alt="Work Icon"
-                    width={12}
-                    height={12}
-                  />
-                  <p>WORK</p>
-                </div>
-              </div>
-              <WorkSlider />
-            </div>
-            <div className="home-c1-r2-r1-col3 portfolio-block">
-              <div className="home-r2-header">
-                <div className="home-r2-header-tag">
-                  <Image
-                    src={LocationIcon}
-                    alt="Location Icon"
-                    width={12}
-                    height={12}
-                  />
-                  <p>MAP</p>
-                </div>
-              </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236860.71332812856!2d77.46612573821041!3d12.954280236682722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1745168872219!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <div className="home-c1-r2-row2">
-            <div className="home-c1-r2-r2-col1 portfolio-block">
-              <div className="home-r2-header">
-                <div className="home-r2-header-tag">
-                  <Image
-                    src={GalleryIcon}
-                    alt="gallery Icon"
-                    width={12}
-                    height={12}
-                  />
-                  <p>GALLERY</p>
-                </div>
-              </div>
-              <Gallery />
-            </div>
-            <div className="home-c1-r2-r2-col2 portfolio-block">
-              <div className="home-r2-header">
-                <div className="home-r2-header-tag">
-                  <Image
-                    src={MailIcon}
-                    alt="Mail Icon"
-                    width={12}
-                    height={12}
-                  />
-                  <p>CONTACT</p>
-                </div>
-              </div>
-
-              <div className="Contact-form">
-                <form ref={formRef} onSubmit={onSubmit} className="space-y-4">
-                  <div className="user-inputs">
-                    <div className="input-name contact-input-field">
-                      <p>Hey, my name is </p>
-                      <input
-                        type="text"
-                        name="name"
-                        required
-                        placeholder="Your Name"
-                        className="border p-2 w-full"
-                      />
-                    </div>
-
-                    <div className="input-subject contact-input-field">
-                      <p>and I'm here for </p>
-                      <textarea
-                        name="message"
-                        required
-                        placeholder="Your Message"
-                        className="border p-2 w-full"
-                      ></textarea>
-                    </div>
-
-                    <div className="input-emailid contact-input-field">
-                      <p>Get in touch with me at</p>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        placeholder="Your Email"
-                        className="border p-2 w-full"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="Contact-cta">
-                    <button className="cta-button">
-                      <div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="16"
-                            height="16"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path
-                              fill="currentColor"
-                              d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <span>Send</span>
-                    </button>
-                  </div>
-                </form>
-
-                <span className="block mt-2 text-sm text-gray-600">
-                  {result}
-                </span>
-              </div>
-
-              <p className="copy-rights">
-                © VIvek Tigadi {currentYear}. ALL RIGHTS RESERVED.
+      {showContent && (
+        <div
+          className={`home-col1${contentVisible ? ' visible-fade' : ' blurred-fade'}`}
+        >
+          <div className="home-c1-row1">
+            <Image
+              src={myImage}
+              alt="Hero background"
+              width={110}
+              height={110}
+              priority
+              className="home-c1-r1-r1 Profile-picture object-cover"
+            />
+            {/* <Navbar /> */}
+            <div className="home-c1-r1-r2">
+              <h1>
+                Hello I'm Vivek Tigadi - User Experience Designer.{" "}
+                <span className="Grey-2">Previously a Front-end Developer.</span>
+              </h1>
+              <p>
+                A designer obsessed with creating digital experiences and I can
+                code too! I believe good design is as simple and minimal as
+                possible.
               </p>
             </div>
+            <div className="home-c1-r1-r3">
+              {/* <div className="home-c1-r1-r3-col1">
+                <Image
+                  src={LocationWhiteIcon}
+                  alt="Location Icon"
+                  width={16}
+                  height={16}
+                />
+                <p>Bengaluru, Mumbai, Pune</p>
+              </div> */}
+              <div className="home-c1-r1-r3-col2">
+                <Image
+                  src={AvailableIcon}
+                  alt="Available Icon"
+                  width={16}
+                  height={16}
+                />
+                <p>Available for work</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="home-c1-row2">
+            <div className="home-c1-r2-row1">
+              <div className="home-c1-r2-r1-col1 portfolio-block">
+                <div className="home-r2-header">
+                  <div className="home-r2-header-tag">
+                    <Image
+                      src={ExperienceIcon}
+                      alt="Experience Icon"
+                      width={12}
+                      height={12}
+                    />
+                    <p>EXPERIENCE</p>
+                  </div>
+                </div>
+                <div className="exp-container">
+                  <div className="exp-container-row1">
+                    <div className="exp-container-r1-col1 exp-comp-logo-container">
+                      <Image
+                        src={IvariLogo}
+                        alt="Ivari Logo"
+                        width={32}
+                        height={32}
+                        className="exp-comp-logo"
+                      />
+                    </div>
+                    <div className="exp-container-r1-col2">
+                      <div className="exp-container-r1-c1-row1 exp-title">
+                        <h6>
+                          UI UX Designer <span>Full time</span>
+                        </h6>
+                      </div>
+                      <div className="exp-container-r1-c1-row2 exp-comp-details">
+                        <a href="https://www.ivari.in/">iVari</a>
+                        <p>|</p>
+                        <span>May 24 - Mar 25</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="exp-container-row2">
+                    <div className="exp-container-r2-col1 exp-comp-logo-container">
+                      <Image
+                        src={DesignerrsLogo}
+                        alt="Designerrs Logo"
+                        width={32}
+                        height={32}
+                        className="exp-comp-logo"
+                      />
+                    </div>
+                    <div className="exp-container-r2-col2">
+                      <div className="exp-container-r2-c1-row1 exp-title">
+                        <h6>
+                          UI UX Design <span>Course</span>
+                        </h6>
+                      </div>
+                      <div className="exp-container-r2-c1-row2 exp-comp-details">
+                        <a href="https://designerrs.com/designerrs-certification/000d87-vivek-tigadi/">
+                          Designerrs
+                        </a>
+                        <p>|</p>
+                        <span>Nov 23 - Mar 24</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="exp-container-row3">
+                    <div className="exp-container-r3-col1 exp-comp-logo-container">
+                      <Image
+                        src={HamdanLogo}
+                        alt="Hamdan Logo"
+                        width={32}
+                        height={32}
+                        className="exp-comp-logo"
+                      />
+                    </div>
+                    <div className="exp-container-r3-col2">
+                      <div className="exp-container-r3-c1-row1 exp-title">
+                        <h6>
+                          Front End Dev <span>Intern</span>
+                        </h6>
+                      </div>
+                      <div className="exp-container-r3-c1-row2 exp-comp-details">
+                        <a href="https://hamdaninfocom.in/">Hamdan</a>
+                        <p>|</p>
+                        <span>Oct 22 - Nov 22</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="home-c1-r2-r1-col2 portfolio-block"
+                onClick={() => router.push("/projects")}
+              >
+                <div className="home-r2-header">
+                  <div className="home-r2-header-tag">
+                    <Image
+                      src={WorkIcon}
+                      alt="Work Icon"
+                      width={12}
+                      height={12}
+                    />
+                    <p>WORK</p>
+                  </div>
+                </div>
+                <WorkSlider />
+              </div>
+              <div className="home-c1-r2-r1-col3 portfolio-block">
+                <div className="home-r2-header">
+                  <div className="home-r2-header-tag">
+                    <Image
+                      src={LocationIcon}
+                      alt="Location Icon"
+                      width={12}
+                      height={12}
+                    />
+                    <p>MAP</p>
+                  </div>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236860.71332812856!2d77.46612573821041!3d12.954280236682722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1745168872219!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div className="home-c1-r2-row2">
+              <div className="home-c1-r2-r2-col1 portfolio-block">
+                <div className="home-r2-header">
+                  <div className="home-r2-header-tag">
+                    <Image
+                      src={GalleryIcon}
+                      alt="gallery Icon"
+                      width={12}
+                      height={12}
+                    />
+                    <p>GALLERY</p>
+                  </div>
+                </div>
+                <Gallery />
+              </div>
+              <div className="home-c1-r2-r2-col2 portfolio-block">
+                <div className="home-r2-header">
+                  <div className="home-r2-header-tag">
+                    <Image
+                      src={MailIcon}
+                      alt="Mail Icon"
+                      width={12}
+                      height={12}
+                    />
+                    <p>CONTACT</p>
+                  </div>
+                </div>
+
+                <div className="Contact-form">
+                  <form ref={formRef} onSubmit={onSubmit} className="space-y-4">
+                    <div className="user-inputs">
+                      <div className="input-name contact-input-field">
+                        <p>Hey, my name is </p>
+                        <input
+                          type="text"
+                          name="name"
+                          required
+                          placeholder="Your Name"
+                          className="border p-2 w-full"
+                        />
+                      </div>
+
+                      <div className="input-subject contact-input-field">
+                        <p>and I'm here for </p>
+                        <textarea
+                          name="message"
+                          required
+                          placeholder="Your Message"
+                          className="border p-2 w-full"
+                        ></textarea>
+                      </div>
+
+                      <div className="input-emailid contact-input-field">
+                        <p>Get in touch with me at</p>
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          placeholder="Your Email"
+                          className="border p-2 w-full"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="Contact-cta">
+                      <button className="cta-button">
+                        <div className="svg-wrapper-1">
+                          <div className="svg-wrapper">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <span>Send</span>
+                      </button>
+                    </div>
+                  </form>
+
+                  <span className="block mt-2 text-sm text-gray-600">
+                    {result}
+                  </span>
+                </div>
+
+                <p className="copy-rights">
+                  © VIvek Tigadi {currentYear}. ALL RIGHTS RESERVED.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className="home-col2">
         <div className="home-c2-row1">
-        <iframe src='https://my.spline.design/robotarm-MLAnY9h7KVS7jetxUohM1yfp/' frameborder='0' width='100%' height='100%'></iframe>
+          {/* <iframe
+            src="https://my.spline.design/robotarm-MLAnY9h7KVS7jetxUohM1yfp/"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe> */}
         </div>
         <div className="Skills-block">
           <DesignAccordion />

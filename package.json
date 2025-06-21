@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@studio-freight/react-lenis": "^0.0.47",
     "framer-motion": "^12.7.4",
-    "gsap": "^3.12.7",
+    "gsap": "^3.13.0",
     "lenis": "^1.2.3",
     "next": "15.3.0",
     "next-view-transitions": "^0.3.4",

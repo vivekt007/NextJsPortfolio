@@ -1,3 +1,15 @@
+.blurred-fade {
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 4s cubic-bezier(0.87, 0, 0.13, 1), filter 4s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.visible-fade {
+  opacity: 1;
+  filter: blur(0);
+  transition: opacity 4s cubic-bezier(0.87, 0, 0.13, 1), filter 4s cubic-bezier(0.87, 0, 0.13, 1);
+} 
+
 .home {
   padding: 32px 64px;
   display: flex;
@@ -130,4 +142,5 @@
   .home-r1-c2-row1 {
     flex-direction: column;
   }
-} 
+}
+
