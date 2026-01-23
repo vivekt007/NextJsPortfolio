@@ -9,9 +9,10 @@ import Image from "next/image";
 
 // Imported icons
 import MyLogo from "/public/Icons/Logo.svg?url";
+import MyLogo2 from "/public/Icons/vivekLogo.svg?url";
 import myImage from "/public/MyImages/ProfilePicture.jpg";
 import AvailableIcon from "/public/Icons/Available-icon.svg?url";
-import LocationWhiteIcon from "/public/Icons/LocationIcon.svg?url";
+// import LocationWhiteIcon from "/public/Icons/LocationIcon.svg?url";
 import LocationIcon from "/public/Icons/LocationTagIcon.svg?url";
 import ExperienceIcon from "/public/Icons/LinkedInTagIcon.svg?url";
 import WorkIcon from "/public/Icons/WorkTagIcon.svg?url";
@@ -24,7 +25,6 @@ import InstagramIcon from "/public/Icons/InstagramSocialIcon.svg?url";
 // Imported logos
 import IvariLogo from "/public/Logo/iVariLogo.svg?url";
 import DesignerrsLogo from "/public/Logo/DesignerrsLogo.png";
-import HamdanLogo from "/public/Logo/HamdanInfocomLogo.png";
 
 // Imported Jsx
 import Gallery from "./Component/Gallery.jsx";
@@ -105,18 +105,18 @@ export default function Home() {
           className={`home-col1${contentVisible ? ' visible-fade' : ' blurred-fade'}`}
         >
           <div className="home-c1-row1">
-            <Image
+            {/* <Image
               src={myImage}
               alt="Hero background"
               width={110}
               height={110}
               priority
               className="home-c1-r1-r1 Profile-picture object-cover"
-            />
+            /> */}
             {/* <Navbar /> */}
             <div className="home-c1-r1-r2">
               <h1>
-                Hello I'm Vivek Tigadi - User Experience Designer.{" "}
+                Hello I'm Vivek Tigadi - Freelance Designer.{" "}
                 <span className="Grey-2">Previously a Front-end Developer.</span>
               </h1>
               <p>
@@ -162,6 +162,29 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="exp-container">
+                  <div className="exp-container-row3">
+                    <div className="exp-container-r3-col1 exp-comp-logo-container">
+                      <Image
+                        src={MyLogo2}
+                        alt="My Logo 2"
+                        width={32}
+                        height={32}
+                        className="exp-comp-logo"
+                      />
+                    </div>
+                    <div className="exp-container-r3-col2">
+                      <div className="exp-container-r3-c1-row1 exp-title">
+                        <h6>
+                          Freelance designer
+                        </h6>
+                      </div>
+                      <div className="exp-container-r3-c1-row2 exp-comp-details">
+                        <a href="https://www.vivektigadi.art/">Self Employed</a>
+                        <p>|</p>
+                        <span>Jan 26 - Present</span>
+                      </div>
+                    </div>
+                  </div>
                   <div className="exp-container-row1">
                     <div className="exp-container-r1-col1 exp-comp-logo-container">
                       <Image
@@ -210,29 +233,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="exp-container-row3">
-                    <div className="exp-container-r3-col1 exp-comp-logo-container">
-                      <Image
-                        src={HamdanLogo}
-                        alt="Hamdan Logo"
-                        width={32}
-                        height={32}
-                        className="exp-comp-logo"
-                      />
-                    </div>
-                    <div className="exp-container-r3-col2">
-                      <div className="exp-container-r3-c1-row1 exp-title">
-                        <h6>
-                          Front End Dev <span>Intern</span>
-                        </h6>
-                      </div>
-                      <div className="exp-container-r3-c1-row2 exp-comp-details">
-                        <a href="https://hamdaninfocom.in/">Hamdan</a>
-                        <p>|</p>
-                        <span>Oct 22 - Nov 22</span>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
               <div
@@ -430,13 +431,13 @@ export default function Home() {
           </div>
           <div className="socials-row2">
             <div className="socials-r2-block1">
-              <a href="https://www.vivektigadi.com/">
+              <a href="https://www.vivektigadi.art/">
                 <Image src={MyLogo} alt="My Logo" width={60} height={60} />
               </a>
             </div>
             <div className="socials-r2-block2">
               <a
-                href="https://drive.google.com/file/d/1gBFBvfQv65RYFzPqDcTwwG6wDKs_M2pZ/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1FswiNFDMl5IBZYpu1gcTPraoiyst6JR9/view?usp=drive_link"
                 target="_blank"
               >
                 RESUME
